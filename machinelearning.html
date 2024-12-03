@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and linking to CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Experiment</title>
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+
+<header class="custom-nav-bar">
+    <nav class="custom-nav-links">
+        <div class="nav-logo">
+            <span class="nav-logo-link">LIS 500</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="abbie.html">Abbie</a>
+                    <a href="malak.html">Malak</a>
+                    <a href="victoria.html">Victoria</a>
+                </div>
+            </div>
+            <a href="implicit_bias.html">Implicit Bias</a>
+            <a href="techheros.html">Tech Heros</a>
+            <a href="machinelearning.html">Machine Learning</a>
+            <a href="reflection.html" class="active">Reflection</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Main content area for the Machine Learning Experiment page -->
+<div id="machine-learning-page" class="ml-page-container">
+    <!-- Section explaining the machine learning experiment overview -->
+    <div class="section ml-overview-section">
+        <div class="ml-text-content">
+            <h2>Machine Learning Experiment Overview</h2>
+            <p>
+                On this page, we're sharing our journey with a machine learning experiment using Teachable Machines. The goal was to create a voice or image classification algorithm while gaining insights into the biases and limitations that come with it. This project was inspired by the lessons we learned from Joy Buolamwini's book, "Unmasking AI."
+            </p>
+        </div>
+    </div>
+
+    <!-- Embedded Video of ML Algorithm at Work -->
+    <div class="section video-section">
+        <h2>My ML Algorithm at Work</h2>
+        <div class="video-container">
+            <video width="560" height="315" controls>
+                <source src="ML_Demonstration.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h2>Try Our Model</h2>
+        <p>
+            Check out our model for yourself!
+        </p>
+        <a href="https://editor.p5js.org/vbengry/full/kz-ucR2bo" class="resources-link"> Try the Model</a>
+    </div>
+
+    <!-- Dataset Section with Image Example -->
+    <div class="section dataset-section">
+        <h2>Dataset Information</h2>
+        <p>
+            The dataset we used for this experiment was put together to be as diverse and representative as possible. It included images and audio files from different environments to help reduce any inherent biases and ensure better accuracy.
+        </p>
+        <img src="MI_Image_Examples.png" alt="Diverse Image Samples Used for Training" class="dataset-image">
+    </div>
+
+    <!-- Training and Evaluation Section with Image of Training Process -->
+    <div class="section training-section">
+        <h2>Training and Evaluation</h2>
+        <p>
+            We trained our machine learning model using the compiled dataset and evaluated its performance using metrics like accuracy, precision, and recall. These metrics helped us understand where the model did well and where it still had room for improvement, especially in terms of avoiding biases.
+        </p>
+        <img src="ML_Training.png" alt="Overview of the Machine Learning Training Process" class="training-image">
+
+    </div>
+
+    <!-- Challenges and Reflections Section -->
+    <div class="section challenges-section">
+        <h2>Challenges and Reflections</h2>
+        <p>
+            This project came with its fair share of challenges—from picking the right training data to dealing with biases in the model. Reflecting on these hurdles helped us understand the ethical implications of AI development and why transparency and accountability are so crucial in this field.
+        </p>
+        <a href="reflection.html" class="resources-link">Read More About Challenges and Reflections</a>
+    </div>
+</div>
+
+</body>
+</html>

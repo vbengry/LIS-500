@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and linking to CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections on Machine Learning Project</title>
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+
+<header class="custom-nav-bar">
+    <nav class="custom-nav-links">
+        <div class="nav-logo">
+            <span class="nav-logo-link">LIS 500</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="abbie.html">Abbie</a>
+                    <a href="malak.html">Malak</a>
+                    <a href="victoria.html">Victoria</a>
+                </div>
+            </div>
+            <a href="implicit_bias.html">Implicit Bias</a>
+            <a href="techheros.html">Tech Heroes</a>
+            <a href="machinelearning.html">Machine Learning</a>
+            <a href="reflection.html" class="active">Reflection</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Main content area for the Reflections page -->
+<div id="reflection-page" class="content-container">
+    <!-- Project Statement and Ethical Lessons -->
+    <div class="content-box">
+        <h2>Project Statement and Ethical Lessons</h2>
+        <p>
+            Our machine learning project aimed to create an algorithm that could recognize three different hand gestures: peace sign, heart, and high-five. We used Google’s Teachable Machines to train our model, combining images from group members, friends, and publicly available sources to build a diverse dataset. This project gave us a deeper understanding of how AI systems reflect the data they are trained on, which directly impacts their fairness and accuracy.
+        </p>
+        <p>
+            Inspired by Joy Buolamwini's book *Unmasking AI*, we focused on the ethical implications of the biases that can emerge during the training process. The key lesson for us was that AI is not neutral. Machine learning models often reflect the biases inherent in the datasets they are trained on. This made us realize how important it is to be deliberate and thoughtful about the data we use, especially in ensuring that all groups are adequately represented.
+        </p>
+        <p>
+            Representation was a significant challenge throughout our project. We discovered that the model struggled to recognize gestures from people with darker skin tones compared to lighter-skinned individuals. This was a direct consequence of the lack of diversity in the data we initially collected. Buolamwini's work reinforced that creating inclusive AI is not easy, but it is necessary if we want technology to serve everyone equitably.
+        </p>
+    </div>
+
+    <!-- Embedded Video of ML Algorithm at Work -->
+    <div class="content-box">
+        <h2>Watch Our Model in Action</h2>
+        <div class="video-container">
+            <video width="560" height="315" controls>
+                <source src="ML_Demonstration.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Individual Reflections -->
+    <div class="content-box">
+        <h2>Individual Reflections</h2>
+        <div class="reflection">
+            <h3>Malak's Reflection</h3>
+            <p>
+                Working on this project made me realize just how crucial it is to think about who our technology serves and who it might leave out. Seeing how the limitations of our dataset affected the model's ability to correctly identify gestures really highlighted the importance of including diverse data. If we fail to do that, we risk creating technology that only works well for a specific group of people, which perpetuates systemic inequalities.
+            </p>
+            <p>
+                One of the biggest challenges for me was finding quality images that accurately represented different skin tones and hand shapes. The inconsistencies in lighting and resolution across the images we used made me understand how data quality directly impacts the accuracy of our model. Moving forward, I want to be more intentional about the kinds of data I use and ensure that I am actively working to create more inclusive and fair AI systems.
+            </p>
+        </div>
+        <div class="reflection">
+            <h3>Victoria's Reflection</h3>
+            <p>
+                One key takeaway for me was how easily biases can creep into machine learning models, even when using beginner-friendly tools like Teachable Machines. Our model struggled to recognize gestures in low-light conditions, which made me realize that creating truly accessible technology goes beyond just having diverse datait’s also about considering different environments and use cases.
+            </p>
+            <p>
+                This experience taught me that AI development needs to involve a wide range of perspectives. If only a small, homogenous group is involved in creating AI, the resulting technology is likely to reflect their experiences and exclude others. I want to take what I've learned from this project and apply it to future work by making sure that the technology I create serves a broad and diverse audience.
+            </p>
+        </div>
+        <div class="reflection">
+            <h3>Abbie's Reflection</h3>
+            <p>
+                This project helped me understand that building ethical AI is not a one-time taskit requires ongoing effort and vigilance. Buolamwini’s emphasis on algorithmic accountability really hit home for me. it's not enough to just build a model; we have to constantly assess its performance and make improvements to ensure it serves everyone fairly.
+            </p>
+            <p>
+                One challenge I faced was understanding the complexities of dataset diversity. I learned that having a diverse dataset isn't just about including different types of peopleit’s also about making sure that the data is of high quality and covers a range of scenarios. I also realized that having diverse voices involved in the development process is key to creating ethical technology. This experience has motivated me to advocate for more diversity in tech spaces so that we can build AI systems that are fair and equitable for everyone.
+            </p>
+        </div>
+    </div>
+
+    <!-- Practical Implementation and Challenges -->
+    <div class="content-box">
+        <h2>Practical Implementation and Challenges</h2>
+        <p>
+            We used Google’s Teachable Machines to train our model to recognize three gestures: peace sign, heart, and high-five. Initially, we included a thumbs-up gesture, but we replaced it with the high-five due to repeated misclassifications. The thumbs-up gesture was often confused with other gestures like the peace sign because of their similar hand positions. This experience taught us the importance of selecting gestures that are visually distinct to improve model accuracy.
+        </p>
+        <p>
+            Our dataset was made up of photos contributed by group members, friends, and images from the internet, which introduced variability in gesture styles, skin tones, and backgrounds. However, we still faced challenges related to underrepresentation in certain areas, like lighting conditions and hand shapes. These gaps in the dataset sometimes affected the model’s ability to recognize gestures accurately, particularly in low-light conditions or with unique hand shapes.
+        </p>
+        <p>
+            We implemented the model on a webpage using HTML, CSS, and JavaScript, and used the ml5.js library for seamless integration. GitHub served as our collaborative platform for managing and sharing code, which made version control easy. Despite using beginner-friendly tools, we faced challenges with ensuring the quality of our dataset, which reflected the ethical considerations discussed in *Unmasking AI*. For example, gaps in lighting conditions and gesture variations highlighted areas for improvement in our data curation process.
+        </p>
+    </div>
+
+    <!-- Lessons Learned and Moving Forward -->
+    <div class="content-box">
+        <h2>Lessons Learned and Moving Forward</h2>
+        <p>
+            This project reinforced for us that biases in AI are both technical and societal challenges. it's not enough to just create an algorithm and call it a day. We need to think critically about the data we use, the people involved in development, and the potential impact of the technology we create. By facing these biases head-on, we learned what it takes to make AI fair and equitable.
+        </p>
+        <p>
+            Moving forward, we want to encourage educators, developers, and students to prioritize equity and inclusivity in AI projects. This can involve sourcing diverse datasets, collaborating with underrepresented groups, or testing models under varied conditions to identify gaps and make improvements. AI development should be an interdisciplinary effort that includes voices from different fieldsethics, sociology, and community representatives all have a role to play in making AI more inclusive.
+        </p>
+        <p>
+            One thing we can do is involve users directly in the design process. Participatory design, where end users contribute to the creation of the technology, can help ensure that different perspectives are represented. This project has inspired us to engage more deeply with the communities that our technologies are meant to serve, so we can better understand their needs and make sure our solutions are relevant and fair.
+        </p>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="content-box">
+        <h2>Call to Action</h2>
+        <p>
+            The importance of addressing biases in AI cannot be overstated. We're calling on fellow students, educators, developers, and stakeholders in the tech industry to join us in this effort. AI is not just a tool; it’s a reflection of the values we encode in it. We need to make sure those values are fair, inclusive, and beneficial to all.
+        </p>
+        <p>
+            Consider collaborating with others who bring different perspectives, testing your models in varied environments, and always questioning whether your work might unintentionally exclude or misrepresent certain groups. Together, we can build technologies that empower rather than marginalize. Actively seeking feedback from marginalized communities during the design and testing phases is one way to start.
+        </p>
+        <p>
+            We also encourage tech companies and educational institutions to provide more resources for understanding AI ethics. Workshops, courses, and seminars that focus on ethical AI can equip developers with the knowledge they need to create responsible technology. Addressing bias should be an integral part of every AI project, not an afterthought.
+        </p>
+        <p>
+            In conclusion, the future of AI is in our hands. By approaching AI development with empathy, accountability, and a commitment to inclusivity, we can create technologies that uplift rather than harm. Let's work together to ensure that AI serves everyone equally, creating a fairer and more just world.
+        </p>
+    </div>
+
+    <!-- Explore Our Project Components -->
+    <div class="content-box">
+        <h2>Explore Our Project Components</h2>
+        <p>
+            Check out our GitHub repository for the complete code and see how we put everything together.
+        </p>
+        <a href="https://github.com/vbengry/LIS-500" class="resources-link">View GitHub Repository for the Project</a>
+    </div>
+</div>
+
+</body>
+</html>
