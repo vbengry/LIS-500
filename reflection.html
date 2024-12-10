@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and linking to CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections on Machine Learning Project</title>
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+
+<header class="custom-nav-bar">
+    <nav class="custom-nav-links">
+        <div class="nav-logo">
+            <span class="nav-logo-link">LIS 500</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="abbie.html">Abbie</a>
+                    <a href="malak.html">Malak</a>
+                    <a href="victoria.html">Victoria</a>
+                </div>
+            </div>
+            <a href="implicit_bias.html">Implicit Bias</a>
+            <a href="techheros.html">Tech Heroes</a>
+            <a href="machinelearning.html">Machine Learning</a>
+            <a href="reflection.html" class="active">Reflection</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Main content area for the Reflections page -->
+<div id="reflection-page" class="content-container">
+    <!-- Understanding AI and Machine Learning -->
+    <div class="content-box">
+        <h2>Understanding AI and Machine Learning</h2>
+        <p>
+            <strong>What is Machine Learning?</strong> Machine learning is a type of artificial intelligence where algorithms learn patterns from data to make decisions or predictions without explicit programming. These systems rely heavily on the quality and diversity of the data they’re trained on, making representation crucial for accuracy and fairness.
+        </p>
+        <p>
+            <strong>Defaults Are Not Neutral:</strong> Buolamwini introduces the concept of the "coded gaze," highlighting how AI systems mirror the biases of their creators and datasets. As she notes, <em>"algorithmic bias occurs when one group is better served than another by an AI system."</em> For example, machine learning models trained on datasets dominated by one demographic perform better for that group, potentially misclassifying or excluding others. This reinforces systemic inequalities, emphasizing the need for diverse and intentional datasets.
+        </p>
+        <p>
+            <strong>Who Has Been Left Out?</strong> In <em>Unmasking AI</em>, Buolamwini critiques how marginalized groups, especially women and people of color, have been historically underrepresented in AI datasets. This exclusion perpetuates systems that fail to fairly represent these communities. She warns that <em>"if the AI systems we create to power key aspects of society—from education to healthcare, from employment to housing—mask discrimination and systematize harmful bias, we entrench algorithmic injustice."</em> This insight underscores the importance of addressing systemic inequities in AI development, a challenge our project faced as we worked to create a more inclusive dataset.
+        </p>
+        <p>
+            <strong>Do #AllLivesMatter?</strong> Despite the ideal of broad applicability, AI systems often fail to treat all users equally. For example, facial recognition models trained on predominantly lighter-skinned datasets have higher error rates for darker-skinned individuals, demonstrating that "all lives" are not treated equally in AI development.
+        </p>
+        <p>
+            <strong>Machine Learning and Creativity</strong> Machine learning systems can mimic creativity by generating art, music, or text, but they rely on patterns from human input. This raises questions about originality, authorship, and how machines can complement rather than replace human creativity.
+        </p>
+        <p>
+            <strong>Tech’s Founding Mothers</strong> Women like Ada Lovelace and Grace Hopper made foundational contributions to computing, yet their achievements are often overshadowed. Recognizing their work reminds us that building inclusive AI starts with celebrating diverse voices in tech.
+        </p>
+    </div>
+
+    <!-- Purpose and Context -->
+    <div class="content-box">
+        <h2>Purpose and Context</h2>
+        <p>
+            <strong>Objective:</strong> This project aimed to train a machine learning model to recognize three gestures: peace sign, heart, and high-five using Google’s Teachable Machines. By combining data from our group, friends, and publicly available sources, we created a dataset that represented diverse hand shapes, skin tones, and lighting conditions. The project also served as an opportunity to reflect on ethical considerations and the influence of data on AI outcomes.
+        </p>
+        <p>
+            <strong>Broader Context:</strong> Tools like Teachable Machines make AI accessible to beginners, but they also raise questions about fairness, bias, and representation. Inspired by Joy Buolamwini’s <em>Unmasking AI</em>, we critically examined how our dataset shaped the model and reflected on the ethical implications of deploying AI in real-world contexts.
+        </p>
+    </div>
+
+    <!-- Ethical Considerations in AI Design -->
+    <div class="content-box">
+        <h2>Ethical Considerations in AI Design</h2>
+        <p>
+            <strong>Representation and Bias:</strong> Buolamwini asserts that many AI systems fail to perform equitably due to a lack of diversity in training datasets. In her words, <em>"none of us can escape the impact of the coded gaze."</em> Our project directly engaged with this issue, as gaps in our dataset—such as underrepresented lighting conditions and hand shapes—occasionally impacted the model’s accuracy. This reinforced Buolamwini’s emphasis on thoughtful and inclusive data collection as a foundation for building ethical AI systems.
+
+        </p>
+        <p>
+            <strong>Systemic Inequities:</strong> Even with a user-friendly tool like Teachable Machines, the quality of the model depended on access to diverse, high-quality data. This reflects Buolamwini’s point that systemic inequities, such as the digital divide, create barriers for many users to build equitable AI systems.
+        </p>
+    </div>
+
+    <!-- Practical Implementation and Challenges -->
+    <div class="content-box">
+        <h2>Practical Implementation and Challenges</h2>
+        <p>
+            <strong>Data Collection and Training:</strong> We trained the model using Google’s Teachable Machines to recognize peace sign, heart, and high-five gestures. Our dataset consisted of photos contributed by group members, friends, and publicly available internet images, including both real-life and cartoon depictions. This approach introduced variability in gesture styles, skin tones, and backgrounds, simulating real-world scenarios. The majority of these images can be found in the Class folders on our GitHub. There are just a few images that we could not retrieve from our teachable machine. Some additional images were added to our high-five training specifically since hands are quite similar so adding a third figure complicated the model. 
+        </p>
+        <p>
+            <strong>Challenges and Adjustments:</strong> Initially, we included the thumbs-up gesture but replaced it with high-five due to repeated misclassifications. This experience highlighted the importance of selecting gestures that are visually distinct and easy to interpret. For example, the model often confused the thumbs-up with the peace sign due to their similar hand shapes, leading to inaccurate predictions. We attempted to resolve this issue by training with hundreds of additional images, but the problem persisted. The high-five gesture was more visually distinct and thus easier for the model to recognize accurately. At the same time, the high-five is more sensitive to light and dark and closeness to the camera than the other gestures. This remains true even after additional training is added to the model. This may be due to the similarity of hand gestures, but further images were added and could continue to be added to improve the model. 
+        </p>
+        <p>
+            Another challenge involved ensuring the quality of online images. Inconsistent resolution or lighting occasionally impacted the model’s accuracy. For instance, images with poor lighting conditions led to misclassification of gestures, emphasizing the need for high-quality, diverse data.
+        </p>
+        <p>
+            <strong>Technical Reflections:</strong> The model was implemented on a webpage using HTML, CSS, and JavaScript, with the ml5.js library facilitating seamless integration of the trained algorithm. We used the coding template provided as a start, and GitHub served as our collaborative platform for managing and sharing code, ensuring version control throughout the project.
+        </p>
+    </div>
+
+    <!-- Watch Our Model in Action -->
+    <div class="content-box">
+        <h2>Watch Our Model in Action</h2>
+        <p>
+            Below is an embedded video demonstrating the trained model at work, showcasing its ability to recognize the three gestures accurately:
+        </p>
+        <div class="video-container">
+            <video width="560" height="315" controls>
+                <source src="ML_Demonstration.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Explore Our Project Components -->
+    <div class="content-box">
+        <h2>Explore Our Project Components</h2>
+        <p>
+            Check out our GitHub repository for the complete code and see how we put everything together:
+        </p>
+        <a href="https://github.com/vbengry/LIS-500" class="resources-link">View GitHub Repository for the Project</a>
+    </div>
+
+    <!-- Reflection and Lessons Learned -->
+    <div class="content-box">
+        <h2>Reflection and Lessons Learned</h2>
+        <p>
+            <strong>Bias and Fairness in AI:</strong> This project highlighted that bias in AI is both a technical and societal issue. Despite our efforts to diversify the dataset, remaining gaps made it clear how challenging it is to create truly equitable systems. These lessons echoed Buolamwini’s critiques of how underrepresentation perpetuates systemic inequalities in AI.
+        </p>
+        <p>
+            <strong>Societal Implications:</strong> The challenges we faced mirrored those in larger AI systems. Our experience underscored the importance of fostering inclusivity from the earliest stages of development to ensure AI serves diverse populations equitably.
+        </p>
+    </div>
+
+    <!-- References -->
+    <div class="content-box">
+        <h2>References</h2>
+        <ul>
+            <li>Buolamwini, Joy. <em>Unmasking AI: My Journey to Protect What is Human in a World of AI</em>.</li>
+            <li><a href="https://teachablemachine.withgoogle.com/">Google Teachable Machines</a></li>
+            <li>Relevant Course Resources: Coding Train - Teachable Machines</li>
+            <li>Supplemental Data Sources: Images sourced from group members, friends, and online databases (including real people and cartoon depictions).</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
+
